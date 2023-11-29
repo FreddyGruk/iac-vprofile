@@ -22,7 +22,7 @@ env:
   EKS_PROFILE: devops-eks
 
 jobs:
-    terraform:
+   terraform:
      name: "Apply terraform code changes"
      runs-on: ubuntu-latest
      defaults:
@@ -30,7 +30,7 @@ jobs:
          shell: bash
          working-directory: ./terraform
 
-     steps:
+   steps:
        - name: Checkout source code
          uses: actions/checkout@v4
 
